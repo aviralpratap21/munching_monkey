@@ -1,0 +1,257 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+#logoheader {
+    position: fixed;
+    background-color: black;
+    width: 100%;
+}
+
+#mainlogo {
+    width: 4%;
+    padding-left: 0.5%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+}
+
+#txtlogo {
+    padding-left: 1%;
+    padding-bottom: 0.5%;
+}
+
+#icon1 {
+    margin-left: 58%;
+    font-size: 1.1em;
+    color: rgb(209, 99, 99);
+}
+
+#icon1:hover {
+    color: red;
+    transition: 0.8s;
+}
+
+#icon2 {
+    margin-left: 0.5%;
+    font-size: 1.1em;
+    color: rgb(209, 99, 99);
+}
+
+#icon2:hover {
+    color: red;
+    transition: 0.8s;
+}
+
+#logoheader a i {
+    margin-bottom: 4px;
+}
+
+#mainheader {
+    border-radius: 15px;
+    border: 1px solid aqua;
+    position: fixed;
+    margin-left: 15px;
+    background-color: #141414;
+    width: 98%;
+    padding: 15px 0 15px 0;
+}
+
+.main-nav a {
+    margin-left: 80px;
+    color: white;
+    text-decoration: none;
+}
+
+#icon {
+    margin-left: 1px;
+}
+
+.main-nav a:hover {
+    color: #686868;
+    transition: 0.8s;
+}
+
+.menuhead {
+    color: white;
+    margin-left: 27px;
+}
+
+.box {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(5, minmax(100px, 2fr));
+}
+
+.box img {
+    margin-left: 27px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: 2px solid aqua;
+    max-width: 80%;
+    min-height: 80%;
+    border-radius: 15px;
+    /*aspect-ratio: 3/2;*/
+}
+
+.dish {
+    transition: transform .5s;
+}
+
+.dish:hover {
+    transition: transform .5s;
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 0;
+    background-image: linear-gradient(rgba(10, 10, 10, 0), rgba(112, 3, 3, 0.950));
+    transition: height 0.4s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 15px 15px 15px 15px;
+}
+
+.dish:hover .overlay {
+    margin-left: 11.3%;
+    margin-bottom: 5.8%;
+    height: 92%;
+    width: 80%;
+    /* Show the overlay on hover */
+}
+
+.dish-info {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    text-align: center;
+}
+
+.dish:hover .dish-info {
+    opacity: 1;
+    transform: translateY(0);
+    /* Bring text into view on hover */
+}
+
+.dish-info h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.dish-info p {
+    margin: 10px 0 0;
+    font-size: 1.2rem;
+    color: #ddd;
+}
+
+footer {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #141414;
+}
+
+.footercontainer {
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+
+.socialicons {
+    display: flex;
+    justify-content: center;
+}
+
+.socialicons a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: #314965;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.socialicons a i {
+    font-size: 2em;
+    color: aqua;
+    opacity: 0.9;
+
+}
+
+.socialicons a:hover {
+    background-color: #111;
+    transition: 0.5s;
+}
+
+.socialicons a:hover i {
+    color: white;
+    transition: 0.5s;
+}
+
+.socialicons a i:hover {
+    color: white;
+    transition: 0.5s;
+}
+
+.footernav {
+    margin: 30px 0;
+}
+
+.footernav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.footernav ul li a {
+    color: aqua;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.footernav ul li a:hover {
+    opacity: 1;
+}
+
+.footerbottom {
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+.footerbottom p {
+    color: aqua;
+}
+
+.designer {
+    opacity: 0.7;
+    text-transform: uppercase;
+    text-decoration: underline;
+    letter-spacing: 1px;
+    font-weight: 800;
+    font-size: large;
+    margin: o 5px;
+}
+
+.designer:hover {
+    color: rgb(250, 3, 3);
+}
+
+hr {
+    width: 95%;
+}

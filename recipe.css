@@ -1,0 +1,216 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,600;0,700;1,300;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", roboto;
+}
+body {
+  background-color: black;
+}
+#mybtn button {
+    margin-left: 4%;
+    margin-bottom: 20%;
+    top: 0%;
+    position:relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+  }
+  
+  #mybtn button.learn-more {
+    width: 8rem;
+    height: auto;
+  }
+  
+  #mybtn button.learn-more .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    display: block;
+    margin: 0;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: black;
+    border-radius: 1.625rem;
+  }
+  
+  #mybtn button.learn-more .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: aqua;
+  }
+  
+  #mybtn button.learn-more .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.600rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+  }
+  
+  #mybtn button.learn-more .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.29rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid aqua;
+    border-right: 0.125rem solid aqua;
+    transform: rotate(45deg);
+  }
+  
+  #mybtn button.learn-more .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: black;
+    font-weight: 700;
+    line-height: 1.1;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  #mybtn button:hover .circle {
+    width: 100%;
+  }
+  
+  #mybtn button:hover .circle .icon.arrow {
+    background: aqua;
+    transform: translate(1rem, 0);
+  }
+  
+  #mybtn button:hover .button-text {
+    color: aqua;
+  }
+.container {
+  background-color: #143559;
+  font-size: 16px;
+  padding: 3em 2em;
+  width: 35%; /* i learnt view width property*/
+  /* max-width: 32%; */
+  position: absolute;
+  top: 1em;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 8px;
+  box-shadow: 2px 6.5px 13.5px 11.5px rgba(248, 2, 2, 0.2);
+}
+.search-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 9fr 3fr;
+  gap: 1.2em;
+}
+.search-container input {
+  background-color: #56a2f323;
+  font-size: 14px;
+  border: none;
+  outline: none;
+  padding: 0.6em;
+  border-bottom: 2px solid aqua;
+  text-transform: capitalize;
+}
+
+h3 {
+  text-align: center;
+  margin-top: 1.8rem;
+  color:white;
+}
+img {
+  padding-bottom: 6%;
+  display: block;
+  width: 50%;
+  margin: 1.8em auto;
+}
+.details {
+  background-color: black;
+  border: 2px solid aqua;
+  position: relative;
+  margin: -2.5em auto 0 auto;
+  text-align: center;
+  padding: 0.6em 0;
+  color: #fff;
+  border-radius: 4px;
+  margin-bottom: 5%;
+}
+.details h2 {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+.details h4 {
+  font-size: 1em;
+  font-weight: 400;
+}
+.recipe {
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+  border: 2px solid aqua;
+  background-color: #143559;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  border-radius: 8px;
+  display: none;
+}
+
+.recipe pre {
+  font-size: 0.8rem;
+  white-space: pre-wrap; /* i applied new things hahahahah....*/
+  word-wrap: break-word;
+  padding: 2.3em 1.2em 1.2em 1.2em;
+}
+#hide-recipe {
+  font-size: 1em;
+  width: 1.8em;
+  height: 1.8em;
+  border: 1px solid aqua;
+  background-color: black;
+  color: #fff;
+  outline: none;
+  position: relative;
+  left: 90%;
+  top: 1em;
+  border-radius: 4px;
+}
+#show-recipe {
+  position: relative;
+  left: 74%;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  top: 1em;
+  border: 1px solid aqua;
+  background-color: black;
+  color: #fff;
+  padding: 0.9em 0.5em;
+  border-radius: 4px;
+}
+
+ul {
+  font-size: 15px;
+  position: relative;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 0.8em 1em;
+  padding: 1.2em 0em 0em 1.2em;
+  height: 200px;
+  overflow: hidden;
+  overflow: auto;
+}

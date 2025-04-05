@@ -1,0 +1,35 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+  }
+  img{
+  border: 3px solid aqua;
+  float:center;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  margin-left: 35%;
+  width: 450px;
+  height: 450px;
+  border-radius: 100%;
+
+  }
+  /* Loader container */
+.loader-container {
+    margin-left: 70px;
+    width: 90%;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Loader bar */
+.loader-bar {
+    width: 0;
+    height: 100%;
+    background-color:red;
+    border-radius: 10px;
+    transition: width 3s ease; /* Smooth transition */
+}

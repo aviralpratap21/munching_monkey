@@ -1,0 +1,129 @@
+@font-face{
+    font-family:"customfont";
+    src:url(customfont.ttf);
+}
+body{
+    background-image: url(login\ bgimg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1{
+    font-family:"customfont";
+    color: rgb(255, 0, 0);
+    margin-top: 0%;
+    font-size:500%;
+    font-style: italic;
+    font-weight:lighter;
+    text-shadow:8px 8px 8px black;
+}
+#lgform{
+    background: rgba(58, 164, 235, 0.25);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 6px );
+    -webkit-backdrop-filter: blur( 6px );
+    border-radius: 10px;
+    border: 1px solid aqua;
+    text-align: center;
+    box-sizing:border-box;
+    width:50%; 
+    margin-top: 0%;  
+    margin-left: 25%;
+}
+#logoimg{
+    border: 1px solid aqua;
+    float:center;
+    margin-bottom: 3%;
+    margin-left: 5%;
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    background-attachment: fixed;
+    overflow: hidden;    
+}
+.details_uname{
+    background-color: black;
+    opacity: 0.5; 
+    padding: 1.2%;  
+    border-radius: 5px;
+    width:85%;
+    color: white;
+    margin: 16px 16px ;
+}
+.details_uname{
+    border: 1px solid aqua;
+}
+.details_cnum{
+    
+    background-color: black;
+    opacity: 0.5; 
+    padding: 1.2%;  
+    border-radius: 5px;
+    width:85%;
+    color: white;
+    margin: 16px 16px
+}
+.details_cnum{
+    border: 1px solid aqua;
+}
+
+.started{
+    background-color: red; 
+    padding: 1%;  
+    border-radius: 7px;
+    width:35%;
+    color: white;
+    font-size:large;
+    font-weight:normal;
+    letter-spacing: 3px;
+    cursor: pointer;
+    margin: 16px 16px
+}
+.started:hover{
+    background-color: rgb(158, 5, 5);
+    transition: 0.8s;
+    border: 1px solid aqua;
+}
+.reset{
+    background-color: red; 
+    padding: 1%;  
+    border-radius: 7px;
+    width:20%;
+    color: white;
+    font-size:large;
+    font-weight:normal;
+    letter-spacing: 1px;
+    cursor: pointer; 
+    margin: 16px 16px
+}
+.reset:hover{
+    background-color: rgb(158, 5, 5);
+    transition: 0.8s;
+    border: 1px solid aqua;
+}
+::placeholder {
+    color: white;
+    opacity: 1; 
+    font-weight: bold;
+    letter-spacing: 3px;
+  }
+  
+  ::-ms-input-placeholder { 
+    color: white;
+  }
+  .progress-bar {
+    width: 80%;
+    background-color: rgba( 31, 38, 135, 0.37 );
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: 60px;
+    height: 10px;
+    display: none; /* Initially hidden */
+}
+
+.progress {
+    width: 0;
+    height: 100%;
+    background-color: #fa0505;
+    border-radius: 5px;
+    transition: width 0.3s ease;
+}

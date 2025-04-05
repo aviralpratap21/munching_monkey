@@ -1,0 +1,903 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background-color: black;
+}
+
+#logoheader {
+  position: fixed;
+  background-color: black;
+  width: 100%;
+}
+
+#mainlogo {
+  width: 4%;
+  padding-left: 0.5%;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+}
+
+#txtlogo {
+  padding-left: 1%;
+  padding-bottom: 0.5%;
+}
+
+#icon1 {
+  margin-left: 58%;
+  font-size: 1.1em;
+  color: rgb(209, 99, 99);
+}
+
+#icon1:hover {
+  color: red;
+  transition: 0.8s;
+}
+
+#icon2 {
+  margin-left: 0.5%;
+  font-size: 1.1em;
+  color: rgb(209, 99, 99);
+}
+
+#icon2:hover {
+  color: red;
+  transition: 0.8s;
+}
+
+#logoheader a i {
+  margin-bottom: 4px;
+}
+
+#mainheader {
+  border-radius: 15px;
+  border: 1px solid aqua;
+  position: fixed;
+  margin-left: 15px;
+  background-color: #141414;
+  width: 98%;
+  padding: 15px 0 15px 0;
+}
+
+.main-nav a {
+  margin-left: 80px;
+  color: white;
+  text-decoration: none;
+}
+
+#icon {
+  margin-left: 1px;
+}
+
+.main-nav a:hover {
+  color: #686868;
+  transition: 0.8s;
+}
+
+.slider-container {
+  width: 100%;
+  height: 100%;
+}
+
+.slider-container img {
+  margin-top: 126.5px;
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  top: 0;
+  left: 0;
+}
+
+.nav-button {
+  margin-left: 20px;
+  margin-right: 20px;
+  position: absolute;
+  top: 60%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  border-radius: 100%;
+  font-size: 24px;
+  padding: 10px 15px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.nav-button.left {
+  left: 0;
+}
+
+.nav-button.right {
+  right: 0;
+}
+
+button:focus {
+  outline: none;
+}
+
+/* Fade-in and slide-in effect */
+.fade-out {
+  opacity: 0;
+  transform: translateX(-20px);
+}
+
+.fade-in {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+button {
+  margin-left: 2%;
+  top: 80%;
+  position: absolute;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+button.learn-more {
+  width: 16rem;
+  height: auto;
+}
+
+button.learn-more .circle {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  display: block;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  background: black;
+  border-radius: 1.625rem;
+}
+
+button.learn-more .circle .icon {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: aqua;
+}
+
+button.learn-more .circle .icon.arrow {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  left: 0.625rem;
+  width: 1.125rem;
+  height: 0.125rem;
+  background: none;
+}
+
+button.learn-more .circle .icon.arrow::before {
+  position: absolute;
+  content: "";
+  top: -0.29rem;
+  right: 0.0625rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-top: 0.125rem solid aqua;
+  border-right: 0.125rem solid aqua;
+  transform: rotate(45deg);
+}
+
+button.learn-more .button-text {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.75rem 0;
+  margin: 0 0 0 1.85rem;
+  color: black;
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+button:hover .circle {
+  width: 100%;
+}
+
+button:hover .circle .icon.arrow {
+  background: aqua;
+  transform: translate(1rem, 0);
+}
+
+button:hover .button-text {
+  color: aqua;
+}
+
+/* Container to hold the ribbon */
+.ribbon1-container {
+  margin-left: 15px;
+  margin-top: 3px;
+  width: 98%;
+  padding: 8px 0 8px 0;
+  overflow: hidden;
+  /* Hides the content that overflows */
+  background-color: black;
+  border-radius: 15px;
+
+}
+
+/* The ribbon that will scroll infinitely */
+.ribbon1 {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  white-space: nowrap;
+  /* Prevents wrapping */
+  animation: scrollLeft 25s linear infinite;
+  /* Infinite scroll */
+  animation-play-state: running;
+  /* Ensure the animation is running by default */
+}
+
+/* Styling for each item in the ribbon */
+.ribbon1 span {
+  display: inline-block;
+  padding: 10px 30px;
+  font-size: x-large;
+  font-weight: bold;
+  color: aqua;
+  background-color: transparent;
+  margin: 0 10px;
+  border-radius: 5px;
+}
+
+/* The animation to move the ribbon left */
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(100%);
+    /* Start from right outside the container */
+  }
+
+  100% {
+    transform: translateX(-100%);
+    /* Move to the left outside the container */
+  }
+}
+
+.ribbon1:hover {
+  animation-play-state: paused;
+  /* Pauses the scrolling animation */
+}
+
+.ribbon1 span:hover {
+  color: #686868;
+  transition: 0.5s;
+}
+
+
+/* Container to hold the image and description */
+.content-container {
+  display: flex;
+  /* Arrange items side by side */
+  align-items: center;
+  /* Vertically align the items */
+  max-width: 100%;
+  /* Max width of the container */
+  background-color: black;
+  color: white;
+  border: 1px solid aqua;
+  border-radius: 10px;
+}
+
+/* Styling for the image */
+.image1 {
+  width: 80%;
+  /* Limit the image size */
+  height: auto;
+  /* Maintain aspect ratio */
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-right: 2px solid aqua;
+  margin-right: 20px;
+  /* Space between the image and description */
+}
+
+/* Styling for the description */
+.description {
+  max-width: 60%;
+  /* Set a maximum width for the text */
+}
+
+.description h2 {
+  margin-left: 30px;
+  margin-top: 0;
+  /* Remove the default margin from the heading */
+  font-size: 70px;
+}
+
+.description p {
+  margin-left: 30px;
+  margin-top: 0;
+  padding-top: 0;
+  line-height: 1.1;
+  /* Better line spacing for the text */
+  font-size: large;
+  color: #8d8585;
+}
+
+#anibutton2 button {
+  margin-left: 2%;
+  margin-top: 48%;
+  position: absolute;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+#anibutton2 button.learn-more2 {
+  width: 16rem;
+  height: auto;
+}
+
+#anibutton2 button.learn-more2 .circle2 {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  display: block;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  background: aqua;
+  border-radius: 1.625rem;
+}
+
+#anibutton2 button.learn-more2 .circle2 .icon2 {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: black;
+}
+
+#anibutton2 button.learn-more2 .circle2 .icon2.arrow2 {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  left: 0.625rem;
+  width: 1.125rem;
+  height: 0.125rem;
+  background: none;
+}
+
+#anibutton2 button.learn-more2 .circle2 .icon2.arrow2::before {
+  position: absolute;
+  content: "";
+  top: -0.29rem;
+  right: 0.0625rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-top: 0.125rem solid black;
+  border-right: 0.125rem solid black;
+  transform: rotate(45deg);
+}
+
+#anibutton2 button.learn-more2 .button-text2 {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.75rem 0;
+  margin: 0 0 0 1.85rem;
+  color: aqua;
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#anibutton2 button:hover .circle2 {
+  width: 100%;
+}
+
+#anibutton2 button:hover .circle2 .icon2.arrow2 {
+  background: black;
+  transform: translate(1rem, 0);
+}
+
+#anibutton2 button:hover .button-text2 {
+  color: black;
+}
+
+.content-container2 {
+  display: flex;
+  /* Arrange items side by side */
+  align-items: center;
+  /* Vertically align the items */
+  max-width: 100%;
+  /* Max width of the container */
+  background-color: black;
+  color: white;
+  border: 1px solid aqua;
+  border-radius: 10px;
+}
+
+/* Styling for the image */
+.image2 {
+  width: 69%;
+  /* Limit the image size */
+  height: auto;
+  /* Maintain aspect ratio */
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-left: 2px solid aqua;
+  margin-left: 20px;
+  /* Space between the image and description */
+}
+
+/* Styling for the description */
+.description2 {
+  max-width: 60%;
+  /* Set a maximum width for the text */
+}
+
+.description2 h2 {
+  margin-left: 30px;
+  margin-top: 0;
+  /* Remove the default margin from the heading */
+  font-size: 70px;
+}
+
+.description2 p {
+  margin-left: 30px;
+  margin-top: 0;
+  padding-top: 0;
+  line-height: 1.1;
+  /* Better line spacing for the text */
+  font-size: large;
+  color: #8d8585;
+}
+
+#anibutton3 button {
+  margin-left: 2%;
+  margin-top: 100%;
+  position: absolute;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+#anibutton3 button.learn-more3 {
+  width: 16rem;
+  height: auto;
+}
+
+#anibutton3 button.learn-more3 .circle3 {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  display: block;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  background: aqua;
+  border-radius: 1.625rem;
+}
+
+#anibutton3 button.learn-more3 .circle3 .icon3 {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: black;
+}
+
+#anibutton3 button.learn-more3 .circle3 .icon3.arrow3 {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  left: 0.625rem;
+  width: 1.125rem;
+  height: 0.125rem;
+  background: none;
+}
+
+#anibutton3 button.learn-more3 .circle3 .icon3.arrow3::before {
+  position: absolute;
+  content: "";
+  top: -0.29rem;
+  right: 0.0625rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-top: 0.125rem solid black;
+  border-right: 0.125rem solid black;
+  transform: rotate(45deg);
+}
+
+#anibutton3 button.learn-more3 .button-text3 {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.75rem 0;
+  margin: 0 0 0 1.85rem;
+  color: aqua;
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#anibutton3 button:hover .circle3 {
+  width: 100%;
+}
+
+#anibutton3 button:hover .circle3 .icon3.arrow3 {
+  background: black;
+  transform: translate(1rem, 0);
+}
+
+#anibutton3 button:hover .button-text3 {
+  color: black;
+}
+
+#menu {
+  margin-left: 160px;
+  background-color: black;
+  width: 78%;
+  padding: 15px 0 15px 0;
+}
+
+#menu a {
+  margin-left: 90px;
+  color: white;
+  font-size: x-large;
+  text-decoration: none;
+}
+
+#menu a:hover {
+  color: #686868;
+  transition: 0.4s;
+  text-decoration: underline;
+  text-decoration-color: aqua;
+}
+
+.menuhead {
+  color: white;
+  margin-left: 27px;
+}
+
+.box {
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: repeat(4, minmax(100px, 2fr));
+}
+
+.box img {
+  margin-left: 27px;
+  margin-right: 10px;
+  border: 2px solid aqua;
+  max-width: 80%;
+  min-height: 80%;
+  /*aspect-ratio: 3/2;*/
+}
+
+.dish {
+  transition: transform .5s;
+}
+
+.box img {
+  border-radius: 15px;
+}
+
+.dish:hover {
+  transition: transform .5s;
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0;
+  background-image: linear-gradient(rgba(10, 10, 10, 0), rgba(112, 3, 3, 0.950));
+  transition: height 0.4s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 15px 15px 15px 15px;
+}
+
+.dish:hover .overlay {
+  margin-left: 8.9%;
+  margin-bottom: 1.5%;
+  height: 98%;
+  width: 80%;
+  /* Show the overlay on hover */
+}
+
+.dish-info {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  text-align: center;
+}
+
+.dish:hover .dish-info {
+  opacity: 1;
+  transform: translateY(0);
+  /* Bring text into view on hover */
+}
+
+.dish-info h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.dish-info p {
+  margin: 10px 0 0;
+  font-size: 1.2rem;
+  color: #ddd;
+}
+
+#anibutton4 button {
+  margin-left: 40%;
+  margin-top: 248%;
+  position: absolute;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+#anibutton4 button.learn-more4 {
+  width: 16rem;
+  height: auto;
+}
+
+#anibutton4 button.learn-more4 .circle4 {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  display: block;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  background: aqua;
+  border-radius: 1.625rem;
+}
+
+#anibutton4 button.learn-more4 .circle4 .icon4 {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: black;
+}
+
+#anibutton4 button.learn-more4 .circle4 .icon4.arrow4 {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  left: 0.625rem;
+  width: 1.125rem;
+  height: 0.125rem;
+  background: none;
+}
+
+#anibutton4 button.learn-more4 .circle4 .icon4.arrow4::before {
+  position: absolute;
+  content: "";
+  top: -0.29rem;
+  right: 0.0625rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-top: 0.125rem solid black;
+  border-right: 0.125rem solid black;
+  transform: rotate(45deg);
+}
+
+#anibutton4 button.learn-more4 .button-text4 {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.75rem 0;
+  margin: 0 0 0 1.85rem;
+  color: aqua;
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#anibutton4 button:hover .circle4 {
+  width: 100%;
+}
+
+#anibutton4 button:hover .circle4 .icon4.arrow4 {
+  background: black;
+  transform: translate(1rem, 0);
+}
+
+#anibutton4 button:hover .button-text4 {
+  color: black;
+}
+
+video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.reviews-section {
+  max-width: 92%;
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #141414;
+  border-radius: 10px;
+  box-shadow: 0 0 15px aqua;
+}
+
+.reviews-section h2 {
+  font-size: 2rem;
+  color: #fffcfc;
+  margin-bottom: 20px;
+}
+
+.review-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.review {
+  margin: 10px 10px 10px 10px;
+  background-color: #333;
+  padding: 60px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px red;
+}
+
+.customer-review {
+  font-style: italic;
+  font-size: 1.3rem;
+  color: whitesmoke;
+}
+
+.customer-name {
+  margin-top: 10px;
+  font-weight: bold;
+  color: black;
+}
+
+footer {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #141414;
+}
+
+.footercontainer {
+  width: 100%;
+  padding: 70px 30px 20px;
+}
+
+.socialicons {
+  display: flex;
+  justify-content: center;
+}
+
+.socialicons a {
+  text-decoration: none;
+  padding: 10px;
+  background-color: #314965;
+  margin: 10px;
+  border-radius: 50%;
+}
+
+.socialicons a i {
+  font-size: 2em;
+  color: aqua;
+  opacity: 0.9;
+
+}
+
+.socialicons a:hover {
+  background-color: #111;
+  transition: 0.5s;
+}
+
+.socialicons a:hover i {
+  color: white;
+  transition: 0.5s;
+}
+
+.socialicons a i:hover {
+  color: white;
+  transition: 0.5s;
+}
+
+.footernav {
+  margin: 30px 0;
+}
+
+.footernav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.footernav ul li a {
+  color: aqua;
+  margin: 20px;
+  text-decoration: none;
+  font-size: 1.3em;
+  opacity: 0.7;
+  transition: 0.5s;
+}
+
+.footernav ul li a:hover {
+  opacity: 1;
+}
+
+.footerbottom {
+  background-color: black;
+  padding: 20px;
+  text-align: center;
+}
+
+.footerbottom p {
+  color: aqua;
+}
+
+.designer {
+  opacity: 0.7;
+  text-transform: uppercase;
+  text-decoration: underline;
+  letter-spacing: 1px;
+  font-weight: 800;
+  font-size: large;
+  margin: o 5px;
+}
+
+.designer:hover {
+  color: rgb(250, 3, 3);
+}
+
+hr {
+  width: 95%;
+}
