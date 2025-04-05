@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Munching Monkey - README</title>
+    
 </head>
 <body>
     <h1 align="center">🍽️ The Munching Monkey</h1>
@@ -43,7 +43,7 @@
     </pre>
 
   <h2>💻 Live Demo</h2>
-    <p>You can view the live demo of the website <a href="https://aviralpratap21.github.io/Brainwave_Matrix_Intern_task02/" target="_blank">here</a>.</p>
+    <p>You can view the live demo of the website <a href="https://aviralpratap21.github.io/munching_monkey/" target="_blank">here</a>.</p>
 
   
 
